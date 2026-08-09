@@ -1,0 +1,14 @@
+{
+  "name": "chore-list",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @chore-list/web dev",
+    "build": "pnpm --filter @chore-list/web build",
+    "preview": "pnpm --filter @chore-list/web preview",
+    "typecheck": "pnpm --filter @chore-list/web exec tsc -b",
+    "test": "pnpm --filter @chore-list/web test"
+  }
+}
